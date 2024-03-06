@@ -4,7 +4,6 @@ body {
     line-height:1.5;
     margin:0;
     padding:0;
-    background-image: url("../Team_6_images/tartan.jpg");
 }
 
 /* Global */
@@ -12,12 +11,10 @@ body {
 .container {
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-content:center;
     margin:auto;
+    justify-content:space-around;
     width:80%;
     overflow:hidden;
-    background-color: #9EA799;
 }
 
 /* Fonts */
@@ -38,9 +35,6 @@ body {
     font-weight: 400;
     font-style: normal;
   }
-  
-  
-  
 
 
 a {
@@ -84,196 +78,66 @@ a:hover{
     font-style:bold;
     text-decoration:underline;
 }
-/* Rooms Main Section */
-
-.container h1 {
-    display:flex;
-    justify-content:center;
-    color:#3A6E5A;
-    font-family:"Bebas Neue";
-    background-color: #9EA799;
-}
-
-.container h2 {
-    font-family:"GFS Didot";
-    color:#1E303C;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.container p {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:#1E303C;
-}
-
-#box1, #box2, #box3, #box4 {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-content:center;
-    align-items:center;
-    border: solid 2px #9EA799;
-    border-radius: 5px;
-    margin:10px;
-    padding:10px;
-    width: 80%;
-    background-color: antiquewhite;
-   
-}
-
-/* Facilities */
-.facilities {
-    background-color: #9EA799;
+/* Home Main Section */
+.container{
     width:80%;
-    margin:auto;
     display:flex;
-    flex-direction:column;
     justify-content:space-around;
-    align-content:center;
-    align-items:center;
-    padding:10px;
-    border: solid 2px #1E303C;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
-/* Booking Form */
-
-h3 {
+.container h1{
+    font-family:"Bebas Neue";
+    font-size:50px;
+    color:#1E303C;
+    text-align:center;
+    text-justify:center;
+}
+#showcase {
+    width:100%;
+    background-color: #ffffff;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(0 0 0 / 50%),
+        rgb(0 0 0 / 50%)
+      ), url(../team_6_Images/2.jpg);
+    min-height:600px;
+    background-position: center center;
+    background-repeat:no-repeat;
+    margin:auto;
+}
+.showcase-content {
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#showcase h1{
     font-family:"Bebas Neue";
     display:flex;
     justify-content:center;
-    font-size:28px;
-    background-color: #9EA799;
-}
-.booking {
-    width:80%;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
     align-content:center;
+    color:#ffffff;
     align-items:center;
-    background-color: #9EA799;
-    margin:auto;
+    font-size:50px;
+    padding-top: 320px;
+    text-justify: center;
 }
-Form {
-    background-color:#1E303C;
-    width:80%;
-    margin:auto;
+#showcase p {
+    font-family:"GFS Didot";
     display:flex;
-    flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
-    align-content:center;
+    color:#ffffff;
     align-items:center;
-    padding-top:15px;
-    margin-bottom: 20px;
-}
-
-Form label {
-    font-family: GFS Didot;
-    font-size:18px;
-    color:antiquewhite;
-}
-
-form input[type=text] {
-    border:1px solid #1E303C;
-    padding:10px;
-    margin: 10px;
-    width: 100%;
-    border-radius: 4px;
-}
-form input[type=email] {
-    border:1px solid #1E303C;
-    padding:10px;
-    margin: 10px;
-    width: 100%;
-    border-radius: 4px;
-}
-form input[type=number] {
-    border:1px solid #1E303C;
-    padding:10px;
-    margin: 10px;
-    width: 100%;
-    border-radius: 4px;
-}
-form input[type=tel] {
-    border:1px solid #1E303C;
-    padding:10px;
-    margin: 10px;
-    width: 100%;
-    border-radius: 4px;
-}
-form input[type=date] {
-    border:1px solid #1E303C;
-    color:#1E303C;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding:10px;
-    margin: 10px;
-    width: 100%;
-    border-radius: 4px;
-}
-select {
-    width: 100%;
-    padding: 10px 20px;
-    border: 1px solid #1E303C;
-    border-radius: 4px;
-    
-    color:#1E303C;
-    font-family:"GFS Didot";
-    font-size: 18px;
-    margin:10px;
-  }
-input[type=text]:focus {
-    border: 3px solid EF8B51;
-  }
-
-.button {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:18px;
-    background-color: #3A6E5A;
-    color:antiquewhite;
-    padding: 5 0 5 0;
-    border-radius: 5px;
-    width:30%;
-    margin-top:15px;
-    margin-inline:15px;
-    margin-bottom:15px;
-}
-
-.book_now {
-    background-color: #1E303C;
-    color:antiquewhite;
-    font-family: "GFS Didot";
-    font-size: 18px;
-    border-radius:5px;
-    padding: 5 0 5 0;
-}
-
-.reviews {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-content:center;
-    align-items:center;
-    padding:10px;
-    width: 100%;
-    background-color: antiquewhite;
-    border: solid 2px #9EA799;
-    border-radius: 5px;
-    margin:10px;
-}
-
-.reviews h2 {
-    font-family:"GFS Didot";
-    color:#1E303C;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.reviews p {
-    font-family:"Georgia, 'Times New Roman', Times, serif";
-    color:#1E303C;
-    font-size: 18px;
+    font-size: 36px;
+    text-align: center;
+    text-justify: center;
 }
 /* footer */
 
@@ -286,6 +150,8 @@ footer {
     color:antiquewhite;
     text-decoration:none;
     font-family: "GFS Didot";
+    margin:0;
+    padding:0;
 }
 
 footer #social_links li{
@@ -296,9 +162,8 @@ footer #social_links li{
 #social_links li {
     text-decoration:none;
 }
-
 /* phone version */
-@media only screen and (max-width:767px){
+@media only screen and (max-width:400px){
     .header{
         width:100%;
         display:flex;
@@ -324,43 +189,13 @@ footer #social_links li{
         padding-bottom:20px;
     }
 
-    .container {
-        display:flex;
-        justify-content:center;
-        align-content:center;
-        align-items: center;
-        width:100%;
+    .showcase-content h1 {
+        font-size: 36px;
+        text-align:center;
     }
-
-    .container #box1 img {
-        max-width: 90%;
-    }
-
-    .container #box2 img {
-        max-width: 90%;
-    }
-
-    .container #box3 img {
-        max-width: 90%;
-    }
-
-    .container #box4 img {
-        max-width: 90%;
-    }
-
-    .booking {
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-content:center;
-        align-items:center;
-        background-color: #9EA799;
-        margin:auto;
-    }
-
-    .booking .reviews {
-        width: 80%;
+    .showcase-content p {
+        font-size: 24px;
+        text-align:center;
     }
 
     footer {
@@ -385,7 +220,7 @@ footer #social_links li{
 }
 
 /* Tablet version */
-@media only screen and (min-width:768px){
+@media only screen and (min-width:400px){
     .header {
         width:100%;
         min-height:100px;
@@ -415,48 +250,20 @@ footer #social_links li{
         justify-content:center;
     }
 
-    .container {
-        display:flex;
-        justify-content:center;
-        align-content:center;
-        align-items: center;
-        width:100%;
+    .showcase-content h1 {
+        font-size: 36px;
+        text-align: center;
     }
-
-    .container #box1 img {
-        max-width: 90%;
-    }
-
-    .container #box2 img {
-        max-width: 90%;
-    }
-
-    .container #box3 img {
-        max-width: 90%;
-    }
-
-    .container #box4 img {
-        max-width: 90%;
-    }
-    .booking {
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-content:center;
-        align-items:center;
-        background-color: #9EA799;
-        margin:auto;
-    }
-    .booking .reviews {
-        width: 80%;
+    .showcase-content p {
+        font-size: 24px;
+        text-align: center;
     }
 
     footer {
         width:100%;
         display:flex;
         flex-wrap:wrap;
-        flex-direction:column;
+        flex-direction:row;
     }
 
     footer #social_links{
@@ -474,7 +281,7 @@ footer #social_links li{
 }
 
 /* desktop version */
-@media only screen and (min-width:992px){
+@media only screen and (min-width:980px){
     .header {
         display:flex;
         width: 100%;
@@ -485,7 +292,6 @@ footer #social_links li{
     #mainnav ul {
         display:flex;
         flex-wrap:wrap;
-        padding-right:30px;
 
     }
 
@@ -506,44 +312,6 @@ footer #social_links li{
         max-height:120px;
         max-width:120px;
         padding-bottom:20px;
-        padding-left:30px;
-    }
-
-    .container {
-        display:flex;
-        justify-content:center;
-        align-content:center;
-        align-items: center;
-        width:80%;
-    }
-
-    .container #box1 img {
-        max-width: 90%;
-    }
-
-    .container #box2 img {
-        max-width: 90%;
-    }
-
-    .container #box3 img {
-        max-width: 90%;
-    }
-
-    .container #box4 img {
-        max-width: 90%;
-    }
-    .booking {
-        width:80%;
-        display:flex;
-        flex-direction:row;
-        justify-content:space-around;
-        align-content:center;
-        align-items:center;
-        background-color: #9EA799;
-        margin:auto;
-    }
-    .booking .reviews {
-        width: 100%;
     }
 
     footer {
@@ -563,5 +331,4 @@ footer #social_links li{
         justify-content: space-around;
         padding:10px;
     }
-
 }
